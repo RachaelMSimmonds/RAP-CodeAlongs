@@ -60,6 +60,7 @@ public class GuessingGame {
 			}
 		}
 		scan.close();
+
 	}
 	private static int getInput(String prompt) {
 		System.out.println(prompt);
