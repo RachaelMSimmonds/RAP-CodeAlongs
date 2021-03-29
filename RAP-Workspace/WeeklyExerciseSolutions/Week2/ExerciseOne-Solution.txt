@@ -1,0 +1,22 @@
+public class ExerciseOne {
+	public static void main(String[] args) {
+		int oddNumber = 1;
+		do {
+			System.out.println(oddNumber);
+			oddNumber+=2;
+		}while(oddNumber<=9);
+		
+		/* Alternatively:
+		 * 
+		 * int oddNumber = 1;
+		 * do{
+		 * 	if(oddNumber % 2 != 0){
+		 * 		System.out.println(oddNumber);
+		 * 	}
+		 * 	oddNumber++;
+		 * }while(oddNumber <= 9); 
+		 * 
+		 * 
+		 */
+	}
+}
