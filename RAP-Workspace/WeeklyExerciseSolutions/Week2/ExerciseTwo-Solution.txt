@@ -1,0 +1,27 @@
+import java.util.Arrays; //Import helper class for working with arrays
+
+public class ExerciseTwo {
+	public static void main(String[] args) {
+		char[] alphabet = getAlphabetArray(); 
+		//Use helper class to print the array more easily
+		System.out.println(Arrays.toString(alphabet));
+		
+		//Alternatively
+		for(int index = 0; index<alphabet.length; index++) {
+			System.out.println(alphabet[index]);
+		}
+	}
+	
+	public static char[] getAlphabetArray() {
+		char[] alphabet = new char[26];
+		char currentLetter = 'a';
+		int index = 0;
+		do {
+			alphabet[index] = currentLetter;
+			index++; 
+			currentLetter++;
+		}while(index<alphabet.length && currentLetter <= 'z'); 
+		
+		return alphabet; 
+	}
+}
